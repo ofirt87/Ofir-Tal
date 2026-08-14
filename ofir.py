@@ -1,1 +1,9 @@
-print ("we have one more hour")
+import matplotlib.pyplot as plt
+
+data = [1, 2, 2, 3, 3, 3, 4, 4, 5, 6, 7, 8, 8, 9]
+
+plt.hist(data, bins=5, edgecolor="black")
+plt.title("Histogram")
+plt.xlabel("Value")
+plt.ylabel("Frequency")
+plt.show()
